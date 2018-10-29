@@ -11,7 +11,7 @@ Each preset can be programmed to send out 16 different messages. Please refer to
 
 We take pride in making the MC6 one of the easiest-to-use programmable Midi controllers in the market. If there is any questions you have using the device, please do not hesitate to drop us an email at help@morningstarfx.com.
 
-​# TLDR
+# TLDR
 Too long, didn't read! Cause who likes reading manuals, right?
 
 While we encourage you to go through the full manual, here's a quick list of information to get you quickly started. We take pride in making the MC6 as easy to use as possible, and hope that the on-board directions will be intuitive to you.
