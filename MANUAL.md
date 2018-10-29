@@ -3,7 +3,7 @@ This section explains how the controller works and how pressing individual switc
 
 Please refer to the Midi Type Glossary as well for more information on selecting the correct midi type that you need.
 
-## Overview
+# Overview
 
 The MC6 is a fully programmable Midi controller. How it is structured is simple: There are 30 banks. Each bank has 12 presets, 6 of which are accessible from the 6 switches, while the other 6 are hidden but can be activated by other means such as dual switch presses or external controllers. A Page Toggle function is also available to flip between the first 6 presets and the last 6 presets.
 
@@ -11,8 +11,7 @@ Each preset can be programmed to send out 16 different messages. Please refer to
 
 We take pride in making the MC6 one of the easiest-to-use programmable Midi controllers in the market. If there is any questions you have using the device, please do not hesitate to drop us an email at help@morningstarfx.com.
 
-
-​## TL;DR
+​# TLDR
 Too long, didn't read! Cause who likes reading manuals, right?
 
 While we encourage you to go through the full manual, here's a quick list of information to get you quickly started. We take pride in making the MC6 as easy to use as possible, and hope that the on-board directions will be intuitive to you.
@@ -23,7 +22,7 @@ Press Switch [D + F] in the main preset page. The last used preset, expression p
 ### Editing your presets in the editor
 Make sure you are in Editor mode. Press Switch [C + D] to enter editor mode. Make sure to exit Editor mode to have the full functionality available before you use it with your devices.
 
-## Powering the MC6
+# Powering the MC6
 How to power your MC6
 
 ### 9VDC Centre Negative power supply
@@ -37,7 +36,7 @@ If sending DC power, the polarity does not matter.
 ### USB powered
 Connect a USB cable to the MC6. The MC6 is capable of being fully powered by USB.
 
-## Connections and I/Os
+# Connections and I/Os
 
 ### Midi In/Receive
 This is where the MC6 receives MIDI messages from other MIDI devices.
@@ -56,3 +55,10 @@ The MC6 passes incoming MIDI messages via the MIDI In/Receive port out to the US
 Connect your expression pedals to these ports. You may also connect aux switches to add more programmable switches to the MC6. 
 
 Please note that these ports are INPUT only, and cannot be using to control functions like amp switching or sending Control Voltage messages. You should only be connecting an expression pedal or TRS Aux Switches to these ports.
+
+# External Aux Switch
+Connect an external Aux switch to your MC6 to control Presets G - L.
+
+The MC6 requires an aux switch that is wired to work with the Eventide H9. It has to be connected to the MC6 with a stereo cable.
+
+There are a few pedal builders that provides such switches:
