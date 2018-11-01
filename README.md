@@ -1,7 +1,7 @@
 # MC6-MKII-Midi-Controller
 Firmware for the MC6 MKII Midi Controller
 
-#### Latest stable release: v3.2.2
+#### Latest stable release: v3.2.3
 #### Latest beta release: NA
 
 ---
