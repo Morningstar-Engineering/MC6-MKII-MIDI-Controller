@@ -1,4 +1,5 @@
 site_name: MC6 MKII Manual
+theme: cinder
 nav:
   - Home: index.md
   - User Guide:
