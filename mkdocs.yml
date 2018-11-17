@@ -14,3 +14,4 @@ nav:
   - Help: help.md
 plugins:
     - search
+    - pdf-export
