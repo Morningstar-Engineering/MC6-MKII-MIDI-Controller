@@ -5,16 +5,16 @@
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="../img/favicon.ico" rel="shortcut icon"/>
-<title>MIDI Implementation - MC6 MKII Manual</title>
-<link href="../css/bootstrap-custom.min.css" rel="stylesheet"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>General Usage - MC6 MKII Manual</title>
+<link href="../../css/bootstrap-custom.min.css" rel="stylesheet"/>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css" rel="stylesheet"/>
 <link href="//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css"/>
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css"/>
-<link href="../css/base.css" rel="stylesheet"/>
-<link href="../css/cinder.css" rel="stylesheet"/>
-<link href="../css/highlight.css" rel="stylesheet"/>
+<link href="../../css/base.css" rel="stylesheet"/>
+<link href="../../css/cinder.css" rel="stylesheet"/>
+<link href="../../css/highlight.css" rel="stylesheet"/>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -28,7 +28,7 @@
         }
     });
     </script>
-<link href="midi-implementation.pdf" rel="alternate" title="PDF Export" type="application/pdf"/></head>
+<link href="general-usage.pdf" rel="alternate" title="PDF Export" type="application/pdf"/></head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 <div class="container">
@@ -42,32 +42,32 @@
 <span class="icon-bar"></span>
 </button>
 <!-- Main title -->
-<a class="navbar-brand" href="..">MC6 MKII Manual</a>
+<a class="navbar-brand" href="../..">MC6 MKII Manual</a>
 </div>
 <!-- Expanded navigation -->
 <div class="navbar-collapse collapse">
 <!-- Main navigation -->
 <ul class="nav navbar-nav">
 <li>
-<a href="..">Home</a>
+<a href="../..">Home</a>
 </li>
-<li class="dropdown">
+<li class="dropdown active">
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">User Guide <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li>
-<a href="../user-guide/hardware-overview/">Hardware I/Os</a>
+<a href="../hardware-overview/">Hardware I/Os</a>
 </li>
 <li>
-<a href="../user-guide/main-config-menu/">Main Config Menu</a>
+<a href="../main-config-menu/">Main Config Menu</a>
+</li>
+<li class="active">
+<a href="./">General Usage</a>
 </li>
 <li>
-<a href="../user-guide/general-usage/">General Usage</a>
+<a href="../edit-mc6/">Programming</a>
 </li>
 <li>
-<a href="../user-guide/edit-mc6/">Programming</a>
-</li>
-<li>
-<a href="../user-guide/midi-editor/">Midi Editor</a>
+<a href="../midi-editor/">Midi Editor</a>
 </li>
 </ul>
 </li>
@@ -75,21 +75,21 @@
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Glossary <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li>
-<a href="../glossary/midi-type-glossary/">Midi Types</a>
+<a href="../../glossary/midi-type-glossary/">Midi Types</a>
 </li>
 <li>
-<a href="../glossary/action-glossary/">Actions</a>
+<a href="../../glossary/action-glossary/">Actions</a>
 </li>
 </ul>
 </li>
-<li class="active">
-<a href="./">MIDI Implementation</a>
+<li>
+<a href="../../midi-implementation/">MIDI Implementation</a>
 </li>
 <li>
-<a href="../FAQ/">FAQ</a>
+<a href="../../FAQ/">FAQ</a>
 </li>
 <li>
-<a href="../help/">Help</a>
+<a href="../../help/">Help</a>
 </li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -99,12 +99,12 @@
                         </a>
 </li>
 <li>
-<a href="../glossary/action-glossary/" rel="next">
+<a href="../main-config-menu/" rel="next">
 <i class="fa fa-arrow-left"></i> Previous
                         </a>
 </li>
 <li>
-<a href="../FAQ/" rel="prev">
+<a href="../edit-mc6/" rel="prev">
                             Next <i class="fa fa-arrow-right"></i>
 </a>
 </li>
@@ -115,103 +115,95 @@
 <div class="container">
 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
 <ul class="nav bs-sidenav">
-<li class="first-level active"><a href="#midi-implementation">Midi Implementation</a></li>
-<li class="second-level"><a href="#pc-messages">PC Messages</a></li>
-<li class="second-level"><a href="#cc-messages">CC Messages</a></li>
+<li class="first-level active"><a href="#general-usage">General Usage</a></li>
+<li class="second-level"><a href="#changing-banks">Changing Banks</a></li>
+<li class="second-level"><a href="#switch-and-display-names">Switch and Display Names</a></li>
+<li class="second-level"><a href="#mapping-actions-to-midi-types">Mapping Actions to Midi Types</a></li>
+<li class="second-level"><a href="#dual-switch-functions">Dual Switch Functions</a></li>
 </ul>
 </div></div>
 <div class="col-md-9" role="main">
-<h1 id="midi-implementation">Midi Implementation</h1>
-<p>Midi implementation chart for the MC6.</p>
+<h1 id="general-usage">General Usage</h1>
 <hr/>
-<h2 id="pc-messages">PC Messages</h2>
-<p>PC messages will change the banks on the MC6 MKII, where a PC#0 message will engage Bank 1, and PC#1 message will engage Bank 2, and so on.</p>
-<hr/>
-<h2 id="cc-messages">CC Messages</h2>
-<p>The MC6 MKII can be controlled by external midi controllers as well. Send the following messages via another Midi Controller to control the MC6.</p>
+<h2 id="changing-banks">Changing Banks</h2>
+<p>Step on Switches [A + B] together to bank down and Switches [B + C] to bank up. There are a total of 30 banks on the MC6.</p>
+<h2 id="switch-and-display-names">Switch and Display Names</h2>
+<p><strong>Activating Presets</strong></p>
+<p>Each switch corresponds to the display name closest to it. Pressing switch [A] activates Preset A, switch [B] activates Preset B and so forth.</p>
+<p>If you have an external aux switch connected to the MC6, depending on how it is wired, it will invoke Presets G-L.</p>
+<h2 id="mapping-actions-to-midi-types">Mapping Actions to Midi Types</h2>
+<p>The MC6 MKII allows you to map actions taken on the switches to Midi Types and functions. For example, you can map a CC#1 message to a Press action, and a CC#2 message to a Release action. When the switch is pressed, a CC#1 message will be sent, and when the switch is released, a CC#2 messages will be sent. There is a list of actions available to you.</p>
+<ol>
+<li>Press</li>
+<li>Release</li>
+<li>Long Press</li>
+<li>Long Press Release</li>
+<li>Double Tap</li>
+<li>Double Tap Release</li>
+<li>Long Double Tap</li>
+<li>Long Double Tap Release</li>
+<li>Release All</li>
+</ol>
+<h2 id="dual-switch-functions">Dual Switch Functions</h2>
+<p>The MC6 makes use of dual switch combination to carry out certain functions.</p>
 <table>
 <thead>
 <tr>
 <th>Function</th>
-<th>CC#</th>
-<th>Value</th>
+<th>Switch</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Bank Up</td>
-<td>0</td>
-<td>any</td>
-</tr>
-<tr>
 <td>Bank Down</td>
-<td>1</td>
-<td>any</td>
+<td>A+B</td>
 </tr>
 <tr>
-<td>Clear Toggle (All)</td>
-<td>2</td>
-<td>127</td>
+<td>Bank Up</td>
+<td>B+C</td>
 </tr>
 <tr>
-<td>Clear Toggle (Individual)</td>
-<td>2</td>
-<td>0 - 11 (0 = Preset A)</td>
+<td>Edit Menu</td>
+<td>D+F</td>
 </tr>
 <tr>
-<td>Set Toggle (All)</td>
-<td>3</td>
-<td>127</td>
+<td>Toggle Editor Mode</td>
+<td>C+D</td>
 </tr>
 <tr>
-<td>Set Toggle (Individual)</td>
-<td>3</td>
-<td>0 - 11 (0 = Preset A)</td>
+<td>Toggle MIDI Thru</td>
+<td>A+F</td>
+</tr>
+</tbody>
+</table>
+<p>Besides this, you can also use dual switch presses to call the extra presets.</p>
+<table>
+<thead>
+<tr>
+<th>Preset</th>
+<th>Switch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G</td>
+<td>D+E</td>
 </tr>
 <tr>
-<td>Engage Preset</td>
-<td>10 - 21 (10 = Preset A)</td>
-<td>0 = Do Nothing</td>
+<td>H</td>
+<td>E+F</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>1 = On Press</td>
+<td>I</td>
+<td>A+D</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>2 = On Release</td>
+<td>J</td>
+<td>B+E</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>3 = On Long Press</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>4 = On Long Press Release</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>5 = On Double Tap</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>6 = On Double Tap Release</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>7 = On Double Tap Hold</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>8 = On Double Tap Hold Release</td>
+<td>K</td>
+<td>C+F</td>
 </tr>
 </tbody>
 </table></div>
@@ -221,16 +213,16 @@
 <p>
 <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small></p></footer></body></html>
 
-<script src="../js/jquery-1.10.2.min.js"></script>
-<script src="../js/bootstrap-3.0.3.min.js"></script>
-<script src="../js/highlight.pack.js"></script>
+<script src="../../js/jquery-1.10.2.min.js"></script>
+<script src="../../js/bootstrap-3.0.3.min.js"></script>
+<script src="../../js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>
-    var base_url = '..';
+    var base_url = '../..';
     </script>
-<script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
-<script src="../js/base.js"></script>
-<script src="../search/main.js"></script>
+<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+<script src="../../js/base.js"></script>
+<script src="../../search/main.js"></script>
 <div aria-hidden="true" aria-labelledby="Search Modal" class="modal" id="mkdocs_search_modal" role="dialog" tabindex="-1">
 <div class="modal-dialog">
 <div class="modal-content">

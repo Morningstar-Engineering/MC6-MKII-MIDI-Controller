@@ -4,7 +4,9 @@ nav:
   - Home: index.md
   - User Guide:
     - Hardware I/Os: user-guide/hardware-overview.md
-    - User Guide: user-guide/using-the-mc6.md
+    - Main Config Menu: user-guide/main-config-menu.md
+    - General Usage: user-guide/general-usage.md
+    - Programming: user-guide/edit-mc6.md
     - Midi Editor: user-guide/midi-editor.md
   - Glossary:
     - Midi Types: glossary/midi-type-glossary.md
