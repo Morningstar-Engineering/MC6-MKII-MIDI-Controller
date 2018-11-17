@@ -4,6 +4,9 @@ Firmware for the MC6 MKII Midi Controller
 #### Latest stable release: v3.2.3
 #### Latest beta release: NA
 
+#### User Manual
+https://morningstar-engineering.github.io/MC6-MKII-Midi-Controller/site/
+
 ---
 
 #### Naming convention for firmware numbers
