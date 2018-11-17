@@ -4,7 +4,7 @@ theme: cinder
 site_description: User manual for the Morningstar MC6 MKII
 site_author: Morningstar Engineering
 copyright: © 2018 MorningstarFX Pte Ltd
-google_analytics: 
+custom_dir: custom_theme/
 nav:
   - Home: 01-main.md
   - User Guide:
