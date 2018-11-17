@@ -8,7 +8,7 @@ google_analytics:
 nav:
   - Home: 01-main.md
   - User Guide:
-    - Hardware I/Os: 02-user-guide/hardware-overview.md
+    - Hardware I/Os: user-guide/02-hardware-overview.md
     - Main Config Menu: user-guide/03-main-config-menu.md
     - General Usage: user-guide/04-general-usage.md
     - Programming: user-guide/05-edit-mc6.md
