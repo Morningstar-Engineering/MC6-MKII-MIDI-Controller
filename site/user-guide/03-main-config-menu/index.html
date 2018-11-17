@@ -8,7 +8,7 @@
 <meta content="User manual for the Morningstar MC6 MKII" name="description"/>
 <meta content="Morningstar Engineering" name="author"/>
 <link href="../../img/favicon.ico" rel="shortcut icon"/>
-<title>Actions - MC6 MKII Manual</title>
+<title>Main Config Menu - MC6 MKII Manual</title>
 <link href="../../css/bootstrap-custom.min.css" rel="stylesheet"/>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css" rel="stylesheet"/>
@@ -30,7 +30,7 @@
         }
     });
     </script>
-<link href="action-glossary.pdf" rel="alternate" title="PDF Export" type="application/pdf"/></head>
+<link href="03-main-config-menu.pdf" rel="alternate" title="PDF Export" type="application/pdf"/></head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 <div class="container">
@@ -51,41 +51,41 @@
 <!-- Main navigation -->
 <ul class="nav navbar-nav">
 <li>
-<a href="../..">Home</a>
+<a href="../../01-main/">Home</a>
 </li>
-<li class="dropdown">
+<li class="dropdown active">
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">User Guide <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li>
-<a href="../../user-guide/hardware-overview/">Hardware I/Os</a>
+<a href="../../02-user-guide/hardware-overview.md">Hardware I/Os</a>
+</li>
+<li class="active">
+<a href="./">Main Config Menu</a>
 </li>
 <li>
-<a href="../../user-guide/main-config-menu/">Main Config Menu</a>
+<a href="../04-general-usage/">General Usage</a>
 </li>
 <li>
-<a href="../../user-guide/general-usage/">General Usage</a>
+<a href="../05-edit-mc6/">Programming</a>
 </li>
 <li>
-<a href="../../user-guide/edit-mc6/">Programming</a>
-</li>
-<li>
-<a href="../../user-guide/midi-editor/">Midi Editor</a>
+<a href="../06-midi-editor/">Midi Editor</a>
 </li>
 </ul>
 </li>
-<li class="dropdown active">
+<li class="dropdown">
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Glossary <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li>
-<a href="../midi-type-glossary/">Midi Types</a>
+<a href="../../glossary/07-midi-type-glossary/">Midi Types</a>
 </li>
-<li class="active">
-<a href="./">Actions</a>
+<li>
+<a href="../../glossary/08-action-glossary/">Actions</a>
 </li>
 </ul>
 </li>
 <li>
-<a href="../../midi-implementation/">MIDI Implementation</a>
+<a href="../../09-midi-implementation/">MIDI Implementation</a>
 </li>
 <li>
 <a href="../../FAQ/">FAQ</a>
@@ -101,12 +101,12 @@
                         </a>
 </li>
 <li>
-<a href="../midi-type-glossary/" rel="next">
+<a href="../../01-main/" rel="next">
 <i class="fa fa-arrow-left"></i> Previous
                         </a>
 </li>
 <li>
-<a href="../../midi-implementation/" rel="prev">
+<a href="../04-general-usage/" rel="prev">
                             Next <i class="fa fa-arrow-right"></i>
 </a>
 </li>
@@ -117,43 +117,38 @@
 <div class="container">
 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
 <ul class="nav bs-sidenav">
-<li class="first-level active"><a href="#action-glossary">Action Glossary</a></li>
-<li class="second-level"><a href="#overview">Overview</a></li>
-<li class="second-level"><a href="#press">Press</a></li>
-<li class="second-level"><a href="#release">Release</a></li>
-<li class="second-level"><a href="#long-press">Long Press</a></li>
-<li class="second-level"><a href="#long-press-release">Long Press Release</a></li>
-<li class="second-level"><a href="#double-tap">Double Tap</a></li>
-<li class="second-level"><a href="#double-tap-release">Double Tap Release</a></li>
-<li class="second-level"><a href="#long-double-tap">Long Double Tap</a></li>
-<li class="second-level"><a href="#long-double-tap-release">Long Double Tap Release</a></li>
-<li class="second-level"><a href="#release-all">Release All</a></li>
+<li class="first-level active"><a href="#main-configuration-menu">Main Configuration Menu</a></li>
+<li class="second-level"><a href="#factory-reset-reset">Factory Reset (Reset)</a></li>
+<li class="second-level"><a href="#set-midi-channel-midich">Set MIDI Channel (MidiCh)</a></li>
+<li class="second-level"><a href="#change-input-chginp">Change Input (ChgInp)</a></li>
+<li class="second-level"><a href="#switch-sensitivity-swsens">Switch Sensitivity (SwSens)</a></li>
+<li class="second-level"><a href="#bank-display-time-bnktime">Bank Display Time (BnkTime)</a></li>
+<li class="second-level"><a href="#midi-clock-midiclk">MIDI Clock (MidiClk)</a></li>
 </ul>
 </div></div>
 <div class="col-md-9" role="main">
-<h1 id="action-glossary">Action Glossary</h1>
-<p>Descriptions for the list of actions.</p>
-<hr/>
-<h2 id="overview">Overview</h2>
-<p>Each of the 16 messages can be programmed to match an action. </p>
-<h2 id="press">Press</h2>
-<p>A single tap to the switch.</p>
-<h2 id="release">Release</h2>
-<p>Releasing the switch after a Press action.</p>
-<h2 id="long-press">Long Press</h2>
-<p>A single tap to the switch that is held down for at least 600ms.</p>
-<h2 id="long-press-release">Long Press Release</h2>
-<p>Releasing the switch after a Long Press action.</p>
-<h2 id="double-tap">Double Tap</h2>
-<p>A double consecutive tap to the switch.</p>
-<h2 id="double-tap-release">Double Tap Release</h2>
-<p>Releasing the switch after a Double Tap action.</p>
-<h2 id="long-double-tap">Long Double Tap</h2>
-<p>A double consecutive tap to the switch that is held down for at least 600ms.</p>
-<h2 id="long-double-tap-release">Long Double Tap Release</h2>
-<p>Releasing the switch after a Long Double Tap action.</p>
-<h2 id="release-all">Release All</h2>
-<p>This action groups Release and Long Press Release together.</p></div>
+<h1 id="main-configuration-menu">Main Configuration Menu</h1>
+<p>To access the Controller Settings Menu, hold down Switches [D + F] before powering up the MC6. The display will indicate that it is booting into the configuration page, and the menu below will be displayed:</p>
+<p><img alt="MC6 Config Page" src="../img/mc6-config-page.png"/></p>
+<h3 id="factory-reset-reset">Factory Reset (Reset)</h3>
+<p>To do a factory reset, hold down for 2 seconds. The MC6 will show that it is performing a factory reset. All user presets and settings will be reset to factory default when a reset is done.</p>
+<h3 id="set-midi-channel-midich">Set MIDI Channel (MidiCh)</h3>
+<p>Set the MIDI receive channel for the MC6. The MC6 can receive and respond to messages from external midi controllers. Press Switch A or B to increase or decrease the MIDI channel respectively.</p>
+<h3 id="change-input-chginp">Change Input (ChgInp)</h3>
+<p>Change Expression Input Type between Aux Switch, Expression or Fixed Sw 1 Setting.</p>
+<ul>
+<li>Aux Switch: Use a stereo cable to connect to an external aux switch to control more presets</li>
+<li>Expression: Connect an expression pedal via a stereo cable (Tip connected to wiper) to engage the expression preset.</li>
+<li>Fixed Sw 1: Similar to the aux switch, but the functions are hard-coded to control the Bank Up, Bank Down and Toggle Page functions without sacrificing any presets.</li>
+</ul>
+<h3 id="switch-sensitivity-swsens">Switch Sensitivity (SwSens)</h3>
+<p>Set switch sensitivity. Choose from 1 (least sensitive) to 5 (most sensitive). Pressing Switch A+B together will select 2, while B+C will select 4.</p>
+<p>By default, this is set to 3 and should be comfortable for most users. Depending on personal taste, you may adjust sensitivity to help you bank up/down (by stepping on 2 switches at once) more accurately. More sensitive means that the lag between the time when a message is sent out and when the switch is pressed it at its minimum.</p>
+<h3 id="bank-display-time-bnktime">Bank Display Time (BnkTime)</h3>
+<p>This setting adjusts the time it takes to load the next bank. It also correlates with the amount of time the device will display the Bank Number and Name before it loads the main preset page.</p>
+<p>The value displayed is in milliseconds.</p>
+<h3 id="midi-clock-midiclk">MIDI Clock (MidiClk)</h3>
+<p>The MIDI clock setting toggles the persistent MIDI clock function ON and OFF. This setting is related to the MIDI Clock message under MIDI Types. If persistent MIDI is ON, the MIDI Clock message will continue sending a MIDI clock signal when engaged, even when engaging other presets or scrolling through banks. However, if persistent MIDI is OFF, the MIDI clock signals will shut off when an event (like a switch press or expression pedal move) is triggered.</p></div>
 </div>
 <footer class="col-md-12 text-center">
 <hr/>

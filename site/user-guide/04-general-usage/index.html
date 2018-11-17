@@ -8,7 +8,7 @@
 <meta content="User manual for the Morningstar MC6 MKII" name="description"/>
 <meta content="Morningstar Engineering" name="author"/>
 <link href="../../img/favicon.ico" rel="shortcut icon"/>
-<title>Programming presets - MC6 MKII Manual</title>
+<title>General Usage - MC6 MKII Manual</title>
 <link href="../../css/bootstrap-custom.min.css" rel="stylesheet"/>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css" rel="stylesheet"/>
@@ -30,7 +30,7 @@
         }
     });
     </script>
-<link href="programming-presets.pdf" rel="alternate" title="PDF Export" type="application/pdf"/></head>
+<link href="04-general-usage.pdf" rel="alternate" title="PDF Export" type="application/pdf"/></head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 <div class="container">
@@ -51,25 +51,25 @@
 <!-- Main navigation -->
 <ul class="nav navbar-nav">
 <li>
-<a href="../..">Home</a>
+<a href="../../01-main/">Home</a>
 </li>
-<li class="dropdown">
+<li class="dropdown active">
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">User Guide <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li>
-<a href="../hardware-overview/">Hardware I/Os</a>
+<a href="../../02-user-guide/hardware-overview.md">Hardware I/Os</a>
 </li>
 <li>
-<a href="../main-config-menu/">Main Config Menu</a>
+<a href="../03-main-config-menu/">Main Config Menu</a>
+</li>
+<li class="active">
+<a href="./">General Usage</a>
 </li>
 <li>
-<a href="../general-usage/">General Usage</a>
+<a href="../05-edit-mc6/">Programming</a>
 </li>
 <li>
-<a href="../edit-mc6/">Programming</a>
-</li>
-<li>
-<a href="../midi-editor/">Midi Editor</a>
+<a href="../06-midi-editor/">Midi Editor</a>
 </li>
 </ul>
 </li>
@@ -77,15 +77,15 @@
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Glossary <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li>
-<a href="../../glossary/midi-type-glossary/">Midi Types</a>
+<a href="../../glossary/07-midi-type-glossary/">Midi Types</a>
 </li>
 <li>
-<a href="../../glossary/action-glossary/">Actions</a>
+<a href="../../glossary/08-action-glossary/">Actions</a>
 </li>
 </ul>
 </li>
 <li>
-<a href="../../midi-implementation/">MIDI Implementation</a>
+<a href="../../09-midi-implementation/">MIDI Implementation</a>
 </li>
 <li>
 <a href="../../FAQ/">FAQ</a>
@@ -100,6 +100,16 @@
 <i class="fa fa-search"></i> Search
                         </a>
 </li>
+<li>
+<a href="../03-main-config-menu/" rel="next">
+<i class="fa fa-arrow-left"></i> Previous
+                        </a>
+</li>
+<li>
+<a href="../05-edit-mc6/" rel="prev">
+                            Next <i class="fa fa-arrow-right"></i>
+</a>
+</li>
 </ul>
 </div>
 </div>
@@ -107,10 +117,98 @@
 <div class="container">
 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
 <ul class="nav bs-sidenav">
+<li class="first-level active"><a href="#general-usage">General Usage</a></li>
+<li class="second-level"><a href="#changing-banks">Changing Banks</a></li>
+<li class="second-level"><a href="#switch-and-display-names">Switch and Display Names</a></li>
+<li class="second-level"><a href="#mapping-actions-to-midi-types">Mapping Actions to Midi Types</a></li>
+<li class="second-level"><a href="#dual-switch-functions">Dual Switch Functions</a></li>
 </ul>
 </div></div>
 <div class="col-md-9" role="main">
-</div>
+<h1 id="general-usage">General Usage</h1>
+<hr/>
+<h2 id="changing-banks">Changing Banks</h2>
+<p>Step on Switches [A + B] together to bank down and Switches [B + C] to bank up. There are a total of 30 banks on the MC6.</p>
+<h2 id="switch-and-display-names">Switch and Display Names</h2>
+<p><strong>Activating Presets</strong></p>
+<p>Each switch corresponds to the display name closest to it. Pressing switch [A] activates Preset A, switch [B] activates Preset B and so forth.</p>
+<p>If you have an external aux switch connected to the MC6, depending on how it is wired, it will invoke Presets G-L.</p>
+<h2 id="mapping-actions-to-midi-types">Mapping Actions to Midi Types</h2>
+<p>The MC6 MKII allows you to map actions taken on the switches to Midi Types and functions. For example, you can map a CC#1 message to a Press action, and a CC#2 message to a Release action. When the switch is pressed, a CC#1 message will be sent, and when the switch is released, a CC#2 messages will be sent. There is a list of actions available to you.</p>
+<ol>
+<li>Press</li>
+<li>Release</li>
+<li>Long Press</li>
+<li>Long Press Release</li>
+<li>Double Tap</li>
+<li>Double Tap Release</li>
+<li>Long Double Tap</li>
+<li>Long Double Tap Release</li>
+<li>Release All</li>
+</ol>
+<h2 id="dual-switch-functions">Dual Switch Functions</h2>
+<p>The MC6 makes use of dual switch combination to carry out certain functions.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Switch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bank Down</td>
+<td>A+B</td>
+</tr>
+<tr>
+<td>Bank Up</td>
+<td>B+C</td>
+</tr>
+<tr>
+<td>Edit Menu</td>
+<td>D+F</td>
+</tr>
+<tr>
+<td>Toggle Editor Mode</td>
+<td>C+D</td>
+</tr>
+<tr>
+<td>Toggle MIDI Thru</td>
+<td>A+F</td>
+</tr>
+</tbody>
+</table>
+<p>Besides this, you can also use dual switch presses to call the extra presets.</p>
+<table>
+<thead>
+<tr>
+<th>Preset</th>
+<th>Switch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G</td>
+<td>D+E</td>
+</tr>
+<tr>
+<td>H</td>
+<td>E+F</td>
+</tr>
+<tr>
+<td>I</td>
+<td>A+D</td>
+</tr>
+<tr>
+<td>J</td>
+<td>B+E</td>
+</tr>
+<tr>
+<td>K</td>
+<td>C+F</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <footer class="col-md-12 text-center">
 <hr/>

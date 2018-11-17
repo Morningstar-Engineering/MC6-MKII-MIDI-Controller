@@ -7,16 +7,16 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="User manual for the Morningstar MC6 MKII" name="description"/>
 <meta content="Morningstar Engineering" name="author"/>
-<link href="../../img/favicon.ico" rel="shortcut icon"/>
-<title>Midi Editor - MC6 MKII Manual</title>
-<link href="../../css/bootstrap-custom.min.css" rel="stylesheet"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>MIDI Implementation - MC6 MKII Manual</title>
+<link href="../css/bootstrap-custom.min.css" rel="stylesheet"/>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css" rel="stylesheet"/>
 <link href="//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css"/>
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css"/>
-<link href="../../css/base.css" rel="stylesheet"/>
-<link href="../../css/cinder.css" rel="stylesheet"/>
-<link href="../../css/highlight.css" rel="stylesheet"/>
+<link href="../css/base.css" rel="stylesheet"/>
+<link href="../css/cinder.css" rel="stylesheet"/>
+<link href="../css/highlight.css" rel="stylesheet"/>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -30,7 +30,7 @@
         }
     });
     </script>
-<link href="midi-editor.pdf" rel="alternate" title="PDF Export" type="application/pdf"/></head>
+<link href="09-midi-implementation.pdf" rel="alternate" title="PDF Export" type="application/pdf"/></head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 <div class="container">
@@ -44,32 +44,32 @@
 <span class="icon-bar"></span>
 </button>
 <!-- Main title -->
-<a class="navbar-brand" href="../..">MC6 MKII Manual</a>
+<a class="navbar-brand" href="..">MC6 MKII Manual</a>
 </div>
 <!-- Expanded navigation -->
 <div class="navbar-collapse collapse">
 <!-- Main navigation -->
 <ul class="nav navbar-nav">
 <li>
-<a href="../..">Home</a>
+<a href="../01-main/">Home</a>
 </li>
-<li class="dropdown active">
+<li class="dropdown">
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">User Guide <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li>
-<a href="../hardware-overview/">Hardware I/Os</a>
+<a href="../02-user-guide/hardware-overview.md">Hardware I/Os</a>
 </li>
 <li>
-<a href="../main-config-menu/">Main Config Menu</a>
+<a href="../user-guide/03-main-config-menu/">Main Config Menu</a>
 </li>
 <li>
-<a href="../general-usage/">General Usage</a>
+<a href="../user-guide/04-general-usage/">General Usage</a>
 </li>
 <li>
-<a href="../edit-mc6/">Programming</a>
+<a href="../user-guide/05-edit-mc6/">Programming</a>
 </li>
-<li class="active">
-<a href="./">Midi Editor</a>
+<li>
+<a href="../user-guide/06-midi-editor/">Midi Editor</a>
 </li>
 </ul>
 </li>
@@ -77,21 +77,21 @@
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Glossary <b class="caret"></b></a>
 <ul class="dropdown-menu">
 <li>
-<a href="../../glossary/midi-type-glossary/">Midi Types</a>
+<a href="../glossary/07-midi-type-glossary/">Midi Types</a>
 </li>
 <li>
-<a href="../../glossary/action-glossary/">Actions</a>
+<a href="../glossary/08-action-glossary/">Actions</a>
 </li>
 </ul>
 </li>
-<li>
-<a href="../../midi-implementation/">MIDI Implementation</a>
+<li class="active">
+<a href="./">MIDI Implementation</a>
 </li>
 <li>
-<a href="../../FAQ/">FAQ</a>
+<a href="../FAQ/">FAQ</a>
 </li>
 <li>
-<a href="../../help/">Help</a>
+<a href="../help/">Help</a>
 </li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -101,12 +101,12 @@
                         </a>
 </li>
 <li>
-<a href="../edit-mc6/" rel="next">
+<a href="../glossary/08-action-glossary/" rel="next">
 <i class="fa fa-arrow-left"></i> Previous
                         </a>
 </li>
 <li>
-<a href="../../glossary/midi-type-glossary/" rel="prev">
+<a href="../FAQ/" rel="prev">
                             Next <i class="fa fa-arrow-right"></i>
 </a>
 </li>
@@ -117,22 +117,106 @@
 <div class="container">
 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
 <ul class="nav bs-sidenav">
-<li class="first-level active"><a href="#midi-editor">Midi Editor</a></li>
+<li class="first-level active"><a href="#midi-implementation">Midi Implementation</a></li>
+<li class="second-level"><a href="#pc-messages">PC Messages</a></li>
+<li class="second-level"><a href="#cc-messages">CC Messages</a></li>
 </ul>
 </div></div>
 <div class="col-md-9" role="main">
-<h1 id="midi-editor">Midi Editor</h1>
-<p>Using the web/desktop editor with your MC6 MKII</p>
+<h1 id="midi-implementation">Midi Implementation</h1>
+<p>Midi implementation chart for the MC6.</p>
 <hr/>
-<p>Besides using the on-board Midi editing features on the MC6, you can also edit your settings via the web and desktop editor. The links are available on our website.</p>
-<p><strong>NOTE: A number of functions are disabled when the MC6 is in editor mode. When using or testing the MC6 with other devices, please toggle out of editor mode.</strong></p>
-<p>Connect your MC6 via USB to your computer and launch the editor. The editor should detect your MC6 and load the editing dashboard as shown below.</p>
-<p><img alt="MC6 Web Editor" src="../img/web-editor-3.png"/></p>
-<p>Your MC6 will have to be in Editor Mode for it to communicate with the editor. You can toggle into editor mode by pressing Switch [C + D] or by pressing the button below the logo on the editor [Model: Morningstar MC6 MKII].</p>
-<p>Once your controller is in editor mode, the Model button will turn Blue, indicating that it is communicating with your controller. You can then press any switch on the MC6 to edit the corresponding preset. To edit your expression pedal, simply move the pedal and the settings will be loaded on the editor.</p>
-<p><img alt="MC6 Web Editor" src="../img/web-editor-4.png"/></p>
-<p>The editing parameters are similar to the on-board editing parameters. </p>
-<p>There are various controls on the top right panel of the editor (below the Bank and Preset number display). You can toggle the page on the MC6, Bank up or down or copy and paste presets. You can also clear your preset settings by double clicking the Clear button. This also applies to the Clear button on the individual Messages, where the Clear button has to be double clicked.</p></div>
+<h2 id="pc-messages">PC Messages</h2>
+<p>PC messages will change the banks on the MC6 MKII, where a PC#0 message will engage Bank 1, and PC#1 message will engage Bank 2, and so on.</p>
+<hr/>
+<h2 id="cc-messages">CC Messages</h2>
+<p>The MC6 MKII can be controlled by external midi controllers as well. Send the following messages via another Midi Controller to control the MC6.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>CC#</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bank Up</td>
+<td>0</td>
+<td>any</td>
+</tr>
+<tr>
+<td>Bank Down</td>
+<td>1</td>
+<td>any</td>
+</tr>
+<tr>
+<td>Clear Toggle (All)</td>
+<td>2</td>
+<td>127</td>
+</tr>
+<tr>
+<td>Clear Toggle (Individual)</td>
+<td>2</td>
+<td>0 - 11 (0 = Preset A)</td>
+</tr>
+<tr>
+<td>Set Toggle (All)</td>
+<td>3</td>
+<td>127</td>
+</tr>
+<tr>
+<td>Set Toggle (Individual)</td>
+<td>3</td>
+<td>0 - 11 (0 = Preset A)</td>
+</tr>
+<tr>
+<td>Engage Preset</td>
+<td>10 - 21 (10 = Preset A)</td>
+<td>0 = Do Nothing</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>1 = On Press</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>2 = On Release</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>3 = On Long Press</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>4 = On Long Press Release</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>5 = On Double Tap</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>6 = On Double Tap Release</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>7 = On Double Tap Hold</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>8 = On Double Tap Hold Release</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <footer class="col-md-12 text-center">
 <hr/>
@@ -140,16 +224,16 @@
 <small>© 2018 MorningstarFX Pte Ltd<br/></small>
 <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small></p></footer></body></html>
 
-<script src="../../js/jquery-1.10.2.min.js"></script>
-<script src="../../js/bootstrap-3.0.3.min.js"></script>
-<script src="../../js/highlight.pack.js"></script>
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/bootstrap-3.0.3.min.js"></script>
+<script src="../js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>
-    var base_url = '../..';
+    var base_url = '..';
     </script>
-<script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-<script src="../../js/base.js"></script>
-<script src="../../search/main.js"></script>
+<script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+<script src="../js/base.js"></script>
+<script src="../search/main.js"></script>
 <div aria-hidden="true" aria-labelledby="Search Modal" class="modal" id="mkdocs_search_modal" role="dialog" tabindex="-1">
 <div class="modal-dialog">
 <div class="modal-content">

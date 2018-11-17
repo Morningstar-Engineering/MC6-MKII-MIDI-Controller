@@ -6,17 +6,17 @@ site_author: Morningstar Engineering
 copyright: © 2018 MorningstarFX Pte Ltd
 google_analytics: 
 nav:
-  - Home: index.md
+  - Home: 01-main.md
   - User Guide:
-    - Hardware I/Os: user-guide/hardware-overview.md
-    - Main Config Menu: user-guide/main-config-menu.md
-    - General Usage: user-guide/general-usage.md
-    - Programming: user-guide/edit-mc6.md
-    - Midi Editor: user-guide/midi-editor.md
+    - Hardware I/Os: 02-user-guide/hardware-overview.md
+    - Main Config Menu: user-guide/03-main-config-menu.md
+    - General Usage: user-guide/04-general-usage.md
+    - Programming: user-guide/05-edit-mc6.md
+    - Midi Editor: user-guide/06-midi-editor.md
   - Glossary:
-    - Midi Types: glossary/midi-type-glossary.md
-    - Actions: glossary/action-glossary.md
-  - MIDI Implementation: midi-implementation.md
+    - Midi Types: glossary/07-midi-type-glossary.md
+    - Actions: glossary/08-action-glossary.md
+  - MIDI Implementation: 09-midi-implementation.md
   - FAQ: FAQ.md
   - Help: help.md
 plugins:
