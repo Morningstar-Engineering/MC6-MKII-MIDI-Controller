@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Midi Types - MC6 MKII Manual</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">MC6 MKII Manual</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../user-guide/hardware-overview/">Hardware I/Os</a>
+</li>
+                                    
+<li >
+    <a href="../../user-guide/using-the-mc6/">User Guide</a>
+</li>
+                                    
+<li >
+    <a href="../../user-guide/midi-editor/">Midi Editor</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Glossary <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="./">Midi Types</a>
+</li>
+                                    
+<li >
+    <a href="../action-glossary/">Actions</a>
+</li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a href="../../midi-implementation/">MIDI Implementation</a>
+                            </li>
+                            <li >
+                                <a href="../../FAQ/">FAQ</a>
+                            </li>
+                            <li >
+                                <a href="../../help/">Help</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../user-guide/midi-editor/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../action-glossary/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#midi-type-glossary">Midi Type Glossary</a></li>
+            <li><a href="#empty-message">Empty Message</a></li>
+            <li><a href="#control-change">Control Change</a></li>
+            <li><a href="#note-on">Note On</a></li>
+            <li><a href="#note-off">Note Off</a></li>
+            <li><a href="#real-time">Real Time</a></li>
+            <li><a href="#sysex">SysEx</a></li>
+            <li><a href="#midi-clock-tap-tempo">Midi Clock Tap Tempo</a></li>
+            <li><a href="#pc-scroll-up">PC Scroll Up</a></li>
+            <li><a href="#pc-scroll-down">PC Scroll Down</a></li>
+            <li><a href="#bank-up">Bank Up</a></li>
+            <li><a href="#bank-down">Bank Down</a></li>
+            <li><a href="#bank-change-mode">Bank Change Mode</a></li>
+            <li><a href="#set-bank">Set Bank</a></li>
+            <li><a href="#toggle-page">Toggle Page</a></li>
+            <li><a href="#set-toggle">Set Toggle</a></li>
+            <li><a href="#midi-thru">MIDI Thru</a></li>
+            <li><a href="#select-expression-message">Select Expression Message</a></li>
+            <li><a href="#looper-mode">Looper Mode</a></li>
+            <li><a href="#strymon-bank-up">Strymon Bank Up</a></li>
+            <li><a href="#strymon-bank-down">Strymon Bank Down</a></li>
+            <li><a href="#axefx-tuner">AxeFX Tuner</a></li>
+            <li><a href="#toggle-preset">Toggle Preset</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="midi-type-glossary">Midi Type Glossary</h1>
+<p>This glossary describes each Midi Type message and the parameters/examples to use it.</p>
+<hr />
+<h2 id="empty-message">Empty Message</h2>
+<p><strong>Description</strong></p>
+<p>No data will be sent out.</p>
+<p>Program Change
+<strong>Description</strong></p>
+<p>Sends a Program Change message of a specified number and channel. Program Change messages are usually used to call presets or patches in your Midi devices.</p>
+<p><strong>Example of Use</strong></p>
+<p>Activate a preset/patch on your Midi Device.</p>
+<h2 id="control-change">Control Change</h2>
+<p><strong>Description</strong></p>
+<p>Sends a Control Change message of a specified number, value and channel. Control Change messages are usually used to change function parameters or call functions in your Midi devices.</p>
+<p><strong>Example of Use</strong></p>
+<p>To activate the record function on the Strymon Timeline, send a CC#87 with any value.
+(Refer to Timeline Manual)</p>
+<h2 id="note-on">Note On</h2>
+<p><strong>Description</strong>
+Sends a Midi Note On Message.</p>
+<h2 id="note-off">Note Off</h2>
+<p><strong>Description</strong></p>
+<p>Sends a Midi Note Off Message.</p>
+<h2 id="real-time">Real Time</h2>
+<p><strong>Description</strong></p>
+<p>Sends a Midi Real Time message. Choose from Start, Stop or Continue</p>
+<h2 id="sysex">SysEx</h2>
+<p><strong>Description</strong></p>
+<p>Sends a Midi System Exclusive message. </p>
+<p>The first value is always the length of the SysEx array, followed by the values you want to send. The values are in decimal (base10) format and not in hex. </p>
+<p>The values are spread across multiple messages. For example, if the length of your SysEx message is 5 and the message you want to send out is {0, 4, 25, 54, 23},  you will need to use 2 messages for this SysEx message where:</p>
+<p>Msg 1
+ * P1/Length = 5
+ * P2 = 0
+ * P3 = 4</p>
+<p>Msg 2
+ * P1/Length = 25
+ * P2 = 54
+ * P3 = 23</p>
+<p>The actions assigned to each message must match. For example, if your SysEx message requires using 3 messages on the MC6, the 3 messages need to have the same action i.e. Press.</p>
+<p>The length should not include the SysEx start and end bytes (i.e. 0xF0 and 0xF7).</p>
+<h2 id="midi-clock-tap-tempo">Midi Clock Tap Tempo</h2>
+<p><strong>Description</strong></p>
+<p>Sends a Midi Clock signal to out from USB and 5 Pin Midi. Syncs your Midi Clock enabled devices to a common BPM.</p>
+<p>You can set the tempo in the parameters, and then choose if you want the device to show the tap menu.</p>
+<p>If selected, the MC6 will load the tap tempo screen when the preset is activated.</p>
+<p>If not selected, the MC6 will send out the Midi Clock messages according to the preset tempo. When another event occurs i.e. a switch is pressed or expression is moved, the Midi Clock messages will stop.</p>
+<h2 id="pc-scroll-up">PC Scroll Up</h2>
+<p><strong>Description</strong></p>
+<p>Sends an incremental message each time the preset is activated. There are 8 counters in the MC6 internal memory. The Select Slot parameter selects one of this counters for your PC Scroll message. Hence, each time the preset is activated, the MC6 will send a PC message which number is based on that counter. The Increment parameter determines if the counter will be increased each time the preset is engaged. The Lower Limit and Upper Limit parameters lets you set a range where the counter will scroll between.</p>
+<p>Let's go through this scenario: If you are trying to scroll through 2 devices (on channel 1 &amp; 2) at the same time with the same preset, first select a counter you want to use. In this example, let's set Select Slot to 1 for Msg1. Increment should be set to Yes, since we want the counter to increase (only for the first message). Thereafter, set your lower and upper limit and channel. For Msg2, select the same slot number as Msg1. Increment should be set to No, since the first message already increased the counter once.</p>
+<h2 id="pc-scroll-down">PC Scroll Down</h2>
+<p><strong>Description</strong></p>
+<p>Similar to PC Scroll Up, but counter is decreased instead of increase.</p>
+<h2 id="bank-up">Bank Up</h2>
+<p><strong>Description</strong></p>
+<p>Changes to the next bank on the MC6.</p>
+<h2 id="bank-down">Bank Down</h2>
+<p><strong>Description</strong></p>
+<p>Changes to the previous bank on the MC6.</p>
+<h2 id="bank-change-mode">Bank Change Mode</h2>
+<p><strong>Description</strong></p>
+<p>Puts the MC6 into a state where you can scroll up and down banks with dedicated switches and then select the bank you want to use.</p>
+<h2 id="set-bank">Set Bank</h2>
+<p><strong>Description</strong></p>
+<p>Jumps to another bank on the MC6.</p>
+<h2 id="toggle-page">Toggle Page</h2>
+<p><strong>Description</strong></p>
+<p>Toggle between pages in a bank. In the main page, the main switches control Presets A-F. By toggling to the next page, Presets G-L are brought forward to the main page where their preset names will be displayed on the screen, and you can control them with the main switches.</p>
+<h2 id="set-toggle">Set Toggle</h2>
+<p><strong>Description</strong></p>
+<p>Changes the toggle state of your presets.You can choose whether to "Set" or "Clear" the toggle positions. "Set" will engage the preset, while "Clear" will disengage it. You can select the presets to apply this change to.</p>
+<h2 id="midi-thru">MIDI Thru</h2>
+<p><strong>Description</strong></p>
+<p>Sets the global Midi Thru feature on the MC6 on or off.</p>
+<h2 id="select-expression-message">Select Expression Message</h2>
+<p><strong>Description</strong></p>
+<p>You can select individual messages in each expression preset to be active with this function. There are 16 messages in each expression preset. If, for example, you set Msg1 and Msg2 to be active on Expression 1, each time you move your expression pedal in Exp1 input, only Msg1 and Msg2 will be sent out.</p>
+<p>This setting is global and applied to all banks. It will be reset to all active when the device power cycles.</p>
+<h2 id="looper-mode">Looper Mode</h2>
+<p><strong>Description</strong></p>
+<p>This message toggles in and out of Looper mode. Looper mode basically increase the sensitivity of your switches to the maximum, so that messages sent out are instantaneous. This is useful if you are using the MC6 to control time-sensitive functions such as Record/Play/Stop.</p>
+<p>In firmware v3.2 onwards, instead of Toggle on/off, we added a selection to allow users to select whether they want to Toggle or set Looper Mode to On or Off.</p>
+<h2 id="strymon-bank-up">Strymon Bank Up</h2>
+<p><strong>Description</strong></p>
+<p>Bank up on your Strymon Timeline, Möbius and Bigsky</p>
+<h2 id="strymon-bank-down">Strymon Bank Down</h2>
+<p><strong>Description</strong>
+Bank down on your Strymon Timeline, Möbius and Bigsky</p>
+<h2 id="axefx-tuner">AxeFX Tuner</h2>
+<p><strong>Description</strong></p>
+<p>Upon engagement, the MC6 will send a CC#15 message with value 127 to the selected channel. CC#15 controls the tuner function on the AxeFX. After which, the tuner page will load. Upon exit, the MC6 will send a CC#15 message with value 0 to disengage the AxeFX tuner.</p>
+<p><strong>Things to note</strong></p>
+<p>Turn off Midi Thru on your AxeFX.</p>
+<p>Enable SysEx send on your AxeFX.</p>
+<p>Connect your AxeFX Midi out to the MC6 Midi In</p>
+<h2 id="toggle-preset">Toggle Preset</h2>
+<p><strong>Description</strong></p>
+<p>This setting toggles a Preset between positions 1 and 2, and can be useful if you want to toggle a Preset with a specific action. </p>
+<p><strong>Things to note</strong></p>
+<p>To use this, be sure to leave the Preset-level toggle setting off. If not, any action engaged on the preset will toggle the preset.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

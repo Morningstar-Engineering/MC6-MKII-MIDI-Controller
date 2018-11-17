@@ -1,0 +1,15 @@
+site_name: MC6 MKII Manual
+nav:
+  - Home: index.md
+  - User Guide:
+    - Hardware I/Os: user-guide/hardware-overview.md
+    - User Guide: user-guide/using-the-mc6.md
+    - Midi Editor: user-guide/midi-editor.md
+  - Glossary:
+    - Midi Types: glossary/midi-type-glossary.md
+    - Actions: glossary/action-glossary.md
+  - MIDI Implementation: midi-implementation.md
+  - FAQ: FAQ.md
+  - Help: help.md
+plugins:
+    - search
