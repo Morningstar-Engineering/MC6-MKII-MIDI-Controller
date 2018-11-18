@@ -5,9 +5,13 @@ Firmware for the MC6 MKII Midi Controller
 #### Latest beta release: NA
 
 #### User Manual
-https://morningstar-engineering.github.io/MC6-MKII-Midi-Controller/site/01-main/
 
-PDF version is available in the pdf_manual folder
+https://morningstar-engineering.github.io/MC6-MKII-Midi-Controller/site/
+
+#### PDF Manual
+
+PDF version is available in the pdf_manual folder on our Github page:
+https://github.com/Morningstar-Engineering/MC6-MKII-Midi-Controller
 
 ---
 

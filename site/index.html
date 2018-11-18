@@ -51,9 +51,6 @@
 <div class="navbar-collapse collapse">
 <!-- Main navigation -->
 <ul class="nav navbar-nav">
-<li>
-<a href="01-main/">Home</a>
-</li>
 <li class="dropdown">
 <a class="dropdown-toggle" data-toggle="dropdown" href="#">User Guide <b class="caret"></b></a>
 <ul class="dropdown-menu">
@@ -94,6 +91,9 @@
 <li>
 <a href="help/">Help</a>
 </li>
+<li>
+<a href="https://www.morningstarfx.com">Back to Morningstar</a>
+</li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
@@ -110,7 +110,7 @@
 <ul class="nav bs-sidenav">
 <li class="first-level active"><a href="#overview">Overview</a></li>
 <li class="second-level"><a href="#latest-firmware-v323">Latest Firmware: v3.2.3</a></li>
-<li class="second-level"><a href="#description">Description</a></li>
+<li class="second-level"><a href="#design-and-architecture">Design and Architecture</a></li>
 <li class="second-level"><a href="#tldr">TLDR</a></li>
 <li class="third-level"><a href="#entering-edit-menu">Entering Edit Menu</a></li>
 <li class="third-level"><a href="#editing-your-presets-in-the-editor">Editing your presets in the editor</a></li>
@@ -123,12 +123,14 @@
 <p>This section explains how the controller works and how pressing individual switches or different switch combinations will interact with the controller.</p>
 <p>Please refer to the Midi Type Glossary as well for more information on selecting the correct midi type that you need.</p>
 <hr/>
-<h2 id="description">Description</h2>
+<h2 id="design-and-architecture">Design and Architecture</h2>
 <p>The MC6 is a fully programmable Midi controller. </p>
-<p>How it is structured is simple: There are 30 banks. Each bank has 12 presets, 6 of which are accessible from the 6 switches, while the other 6 are hidden but can be activated by other means such as dual switch presses or external controllers. A Page Toggle function is also available to flip between the first 6 presets and the last 6 presets.</p>
-<p>Each preset can be programmed to send out 16 different messages. </p>
+<p><strong>How it is structured is simple</strong></p>
+<p><img alt="MC6 Architecture" src="/img/mc6-architecture-1.png"/></p>
+<p>There are 30 banks. Each bank has 12 presets and 2 expression presets. Each preset can be programmed to send out 16 different messages. </p>
+<p><img alt="MC6 Architecture" src="/img/mc6-architecture-2.png"/></p>
+<p>Each bank can display up to 6 presets, of which all are accessible from the 6 switches. The other 6 presets can be engaged via dual switch presses or external aux controllers. A Page Toggle function is also available to switch between the first 6 presets and the last 6 presets.</p>
 <p>Please refer to the Midi Types Glossary for the full list of messages available to you.</p>
-<p>We take pride in making the MC6 one of the easiest-to-use programmable Midi controllers in the market. If there is any questions you have using the device, please do not hesitate to drop us an email at help@morningstarfx.com.</p>
 <hr/>
 <h2 id="tldr">TLDR</h2>
 <p>Too long, didn't read! Cause who likes reading manuals, right?
@@ -138,6 +140,8 @@ While we encourage you to go through the full manual, here's a quick list of inf
 <h3 id="editing-your-presets-in-the-editor">Editing your presets in the editor</h3>
 <p>Make sure you are in Editor mode. Press Switch [C + D] to enter editor mode or click the Toggle Edit Mode button on the editor. </p>
 <p><strong>Make sure to exit Editor mode to have the full functionality available before you use it with your devices.</strong></p>
+<hr/>
+<p>We take pride in making the MC6 one of the easiest-to-use programmable Midi controllers in the market. If there is any questions you have using the device, please do not hesitate to drop us an email at help@morningstarfx.com.</p>
 <hr/></div>
 </div>
 <footer class="col-md-12 text-center">
@@ -186,5 +190,5 @@ While we encourage you to go through the full manual, here's a quick list of inf
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2018-11-17 17:00:51
+Build Date UTC : 2018-11-18 05:03:03
 -->

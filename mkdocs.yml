@@ -6,7 +6,6 @@ site_author: Morningstar Engineering
 copyright: © 2018 MorningstarFX Pte Ltd
 custom_dir: custom_theme/
 nav:
-  - Home: 01-main.md
   - User Guide:
     - Hardware I/Os: user-guide/02-hardware-overview.md
     - Main Config Menu: user-guide/03-main-config-menu.md
@@ -19,6 +18,7 @@ nav:
   - MIDI Implementation: 09-midi-implementation.md
   - FAQ: FAQ.md
   - Help: help.md
+  - Back to Morningstar: https://www.morningstarfx.com
 plugins:
     - search
     - pdf-export

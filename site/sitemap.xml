@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>https://www.morningstarfx.com/01-main/</loc>
-     <lastmod>2018-11-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://www.morningstarfx.com/user-guide/02-hardware-overview/</loc>
      <lastmod>2018-11-18</lastmod>
      <changefreq>daily</changefreq>
@@ -53,6 +48,11 @@
     <url>
      <loc>https://www.morningstarfx.com/help/</loc>
      <lastmod>2018-11-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
 </urlset>
