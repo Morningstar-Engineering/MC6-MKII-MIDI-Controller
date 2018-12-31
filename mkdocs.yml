@@ -21,4 +21,4 @@ nav:
   - Back to Morningstar: https://www.morningstarfx.com
 plugins:
     - search
-    - pdf-export
+    #- pdf-export

@@ -11,3 +11,13 @@ Go into the preset edit menu and then copy the preset. After the preset is copie
 
 ### How do I set the expression pedal to send different CC messages per preset?
 The expression pedal inputs work on a per-bank basis, where every bank has a different expression preset. Each expression preset has 16 midi messages that you can program. By changing banks on the MC6, you can send different CC messages. You can also send different CC messages in each expression preset in the same bank by using your standard presets A-L. By programming a "Select Exp Message" midi type in your preset, you can select which of the 16 midi messages in your expression preset to be active. Hence, when using your expression pedal, only the selected messages will be sent out.
+
+### There is a lag between the time when I press the switch and the time when the MIDI message is sent out. How can I fix this?
+There are several possibilities to this.
+
+#### Switch sensitivity
+This can be adjusted in the Switch Sensitivity setting in the Main Config menu. The switch sensitivity determines how fast dual switch presses are read. A lower sensitivity will make it easier to engage a dual switch press function. If you change the setting to 5, you'll notice that the delay will decrease. You can make use of the Looper mode function, which decreases the delay to close to 0. However, you'll find that dual switch presses to change backs etc are not possible in this mode.
+
+#### Double Tap
+If you have a Double Tap action programmed into your preset, there will be a delay as the controller is checking if a Double Tap action will occuring, before sending out the message.
+
