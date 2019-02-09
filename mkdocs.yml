@@ -12,6 +12,7 @@ nav:
     - General Usage: user-guide/04-general-usage.md
     - Programming: user-guide/05-edit-mc6.md
     - Midi Editor: user-guide/06-midi-editor.md
+    - Updating Firmware: user-guide/07-firmware-update.md
   - Glossary:
     - Midi Types: glossary/07-midi-type-glossary.md
     - Actions: glossary/08-action-glossary.md
