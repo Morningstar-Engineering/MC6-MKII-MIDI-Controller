@@ -195,6 +195,7 @@ Sends a Midi Note On Message.</p>
 <p>You can set the tempo in the parameters, and then choose if you want the device to show the tap menu.</p>
 <p>If selected, the MC6 will load the tap tempo screen when the preset is activated.</p>
 <p>If not selected, the MC6 will send out the Midi Clock messages according to the preset tempo. When another event occurs i.e. a switch is pressed or expression is moved, the Midi Clock messages will stop.</p>
+<p><strong>Please note that this message does not work while you are in Editor Mode. Toggle out of Editor Mode to enable the full functionalities of this message.</strong></p>
 <h2 id="pc-scroll-up">PC Scroll Up</h2>
 <p><strong>Description</strong></p>
 <p>Sends an incremental message each time the preset is activated. There are 8 counters in the MC6 internal memory. The Select Slot parameter selects one of this counters for your PC Scroll message. Hence, each time the preset is activated, the MC6 will send a PC message which number is based on that counter. The Increment parameter determines if the counter will be increased each time the preset is engaged. The Lower Limit and Upper Limit parameters lets you set a range where the counter will scroll between.</p>
@@ -205,21 +206,26 @@ Sends a Midi Note On Message.</p>
 <h2 id="bank-up">Bank Up</h2>
 <p><strong>Description</strong></p>
 <p>Changes to the next bank on the MC6.</p>
+<p><strong>Please note that this message does not work while you are in Editor Mode. Toggle out of Editor Mode to enable the full functionalities of this message.</strong></p>
 <h2 id="bank-down">Bank Down</h2>
 <p><strong>Description</strong></p>
 <p>Changes to the previous bank on the MC6.</p>
+<p><strong>Please note that this message does not work while you are in Editor Mode. Toggle out of Editor Mode to enable the full functionalities of this message.</strong></p>
 <h2 id="bank-change-mode">Bank Change Mode</h2>
 <p><strong>Description</strong></p>
 <p>Puts the MC6 into a state where you can scroll up and down banks with dedicated switches and then select the bank you want to use.</p>
+<p><strong>Please note that this message does not work while you are in Editor Mode. Toggle out of Editor Mode to enable the full functionalities of this message.</strong></p>
 <h2 id="set-bank">Set Bank</h2>
 <p><strong>Description</strong></p>
 <p>Jumps to another bank on the MC6.</p>
+<p><strong>Please note that this message does not work while you are in Editor Mode. Toggle out of Editor Mode to enable the full functionalities of this message.</strong></p>
 <h2 id="toggle-page">Toggle Page</h2>
 <p><strong>Description</strong></p>
 <p>Toggle between pages in a bank. In the main page, the main switches control Presets A-F. By toggling to the next page, Presets G-L are brought forward to the main page where their preset names will be displayed on the screen, and you can control them with the main switches.</p>
 <h2 id="set-toggle">Set Toggle</h2>
 <p><strong>Description</strong></p>
 <p>Changes the toggle state of your presets.You can choose whether to "Set" or "Clear" the toggle positions. "Set" will engage the preset, while "Clear" will disengage it. You can select the presets to apply this change to.</p>
+<p><strong>Please note that this message does not work while you are in Editor Mode. Toggle out of Editor Mode to enable the full functionalities of this message.</strong></p>
 <h2 id="midi-thru">MIDI Thru</h2>
 <p><strong>Description</strong></p>
 <p>Sets the global Midi Thru feature on the MC6 on or off.</p>
@@ -244,6 +250,7 @@ Bank down on your Strymon Timeline, Möbius and Bigsky</p>
 <p>Turn off Midi Thru on your AxeFX.</p>
 <p>Enable SysEx send on your AxeFX.</p>
 <p>Connect your AxeFX Midi out to the MC6 Midi In</p>
+<p><strong>Please note that this message does not work while you are in Editor Mode. Toggle out of Editor Mode to enable the full functionalities of this message.</strong></p>
 <h2 id="toggle-preset">Toggle Preset</h2>
 <p><strong>Description</strong></p>
 <p>This setting toggles a Preset between positions 1 and 2, and can be useful if you want to toggle a Preset with a specific action. </p>
