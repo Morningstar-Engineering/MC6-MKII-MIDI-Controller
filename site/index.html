@@ -112,10 +112,11 @@
 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
 <ul class="nav bs-sidenav">
 <li class="first-level active"><a href="#overview">Overview</a></li>
-<li class="second-level"><a href="#latest-firmware-v323">Latest Firmware: v3.2.3</a></li>
+<li class="second-level"><a href="#latest-firmware-v331">Latest Firmware: v3.3.1</a></li>
+<li class="third-level"><a href="#updating-your-firmware">Updating your firmware</a></li>
 <li class="second-level"><a href="#how-to-use-this-manual">How to use this manual</a></li>
 <li class="second-level"><a href="#design-and-architecture">Design and Architecture</a></li>
-<li class="second-level"><a href="#tldr">TLDR</a></li>
+<li class="second-level"><a href="#tldr">TL;DR</a></li>
 <li class="third-level"><a href="#entering-edit-menu">Entering Edit Menu</a></li>
 <li class="third-level"><a href="#editing-your-presets-in-the-editor">Editing your presets in the editor</a></li>
 </ul>
@@ -123,9 +124,15 @@
 <div class="col-md-9" role="main">
 <h1 id="overview">Overview</h1>
 <p><img alt="MC6 MKII" src="img/firmware_load_screen.png"/></p>
-<h2 id="latest-firmware-v323">Latest Firmware: v3.2.3</h2>
-<p>This section explains how the controller works and how pressing individual switches or different switch combinations will interact with the controller.</p>
-<p>Please refer to the Midi Type Glossary as well for more information on selecting the correct midi type that you need.</p>
+<h2 id="latest-firmware-v331">Latest Firmware: v3.3.1</h2>
+<h3 id="updating-your-firmware">Updating your firmware</h3>
+<p>You'll need to use the Firmware Uploader software to upload the firmware to your device.</p>
+<p>Download the latest Firmware Uploader software <a href="https://github.com/Morningstar-Engineering/Firmware-Uploader/releases">here</a>.</p>
+<p>Download the latest firmware <a href="https://github.com/Morningstar-Engineering/MC6-MKII-Midi-Controller/releases">here</a></p>
+<p>Open the Firmware Uploader
+<img alt="MC6 Architecture" src="img/firmware_uploader.png"/></p>
+<p>If your device is connected, it will appear in the Firmware Uploader software.</p>
+<p>Click on Upload and select the firmware .hex file. The firmware should thereafter be uploaded and your device will restart.</p>
 <hr/>
 <h2 id="how-to-use-this-manual">How to use this manual</h2>
 <p>The navigation panel is at the top of the page. </p>
@@ -133,24 +140,24 @@
 <p><img alt="Manual Screenshot" src="img/manual-screenshot.png"/></p>
 <hr/>
 <h2 id="design-and-architecture">Design and Architecture</h2>
-<p>The MC6 is a fully programmable Midi controller. </p>
+<p>The MC6 MKII is a fully programmable MIDI controller. </p>
 <p><strong>How it is structured is simple</strong></p>
 <p><img alt="MC6 Architecture" src="img/mc6-architecture-1.png"/></p>
 <p>There are 30 banks. Each bank has 12 presets and 2 expression presets. Each preset can be programmed to send out 16 different messages. </p>
 <p><img alt="MC6 Architecture" src="img/mc6-architecture-2.png"/></p>
 <p>Each bank can display up to 6 presets, of which all are accessible from the 6 switches. The other 6 presets can be engaged via dual switch presses or external aux controllers. A Page Toggle function is also available to switch between the first 6 presets and the last 6 presets.</p>
-<p>Please refer to the Midi Types Glossary for the full list of messages available to you.</p>
+<p>Please refer to the <a href="../glossary/07-midi-type-glossary">Midi Types Glossary</a> for the full list of messages available to you.</p>
 <hr/>
-<h2 id="tldr">TLDR</h2>
+<h2 id="tldr">TL;DR</h2>
 <p>Too long, didn't read! Cause who likes reading manuals, right?
-While we encourage you to go through the full manual, here's a quick list of information to get you quickly started. We take pride in making the MC6 as easy to use as possible, and hope that the on-board directions will be intuitive to you.</p>
+While we encourage you to go through the full manual, here's a quick list of information to get you quickly started. We take pride in making the MC6 MKII as easy to use as possible, and hope that the on-board directions will be intuitive enough to you.</p>
 <h3 id="entering-edit-menu">Entering Edit Menu</h3>
 <p>Press Switch [D + F] in the main preset page. The last used preset, expression pedal input and bank will be displayed in the menu.</p>
 <h3 id="editing-your-presets-in-the-editor">Editing your presets in the editor</h3>
 <p>Make sure you are in Editor mode. Press Switch [C + D] to enter editor mode or click the Toggle Edit Mode button on the editor. </p>
 <p><strong>Make sure to exit Editor mode to have the full functionality available before you use it with your devices.</strong></p>
 <hr/>
-<p>We take pride in making the MC6 one of the easiest-to-use programmable Midi controllers in the market. If there is any questions you have using the device, please do not hesitate to drop us an email at help@morningstarfx.com.</p>
+<p>We take pride in making the device one of the easiest-to-use programmable Midi controllers in the market. If there is any questions you have using the device, please do not hesitate to drop us an email at help@morningstarfx.com.</p>
 <hr/></div>
 </div>
 <footer class="col-md-12 text-center">
@@ -199,5 +206,5 @@ While we encourage you to go through the full manual, here's a quick list of inf
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-04-19 16:19:37
+Build Date UTC : 2019-05-05 14:02:20
 -->

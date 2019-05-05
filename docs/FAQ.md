@@ -21,3 +21,5 @@ This can be adjusted in the Switch Sensitivity setting in the Main Config menu. 
 #### Double Tap
 If you have a Double Tap action programmed into your preset, there will be a delay as the controller is checking if a Double Tap action will occuring, before sending out the message.
 
+### How do I lock my banks so that Switch A+B or B+C will not bank down or bank up?
+Set your Switch Sensitivity to the maximum. This reduces the delay when a switch is pressed, and hence makes engaging dual switch functions harder.

@@ -121,20 +121,20 @@
 <div class="container">
 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
 <ul class="nav bs-sidenav">
-<li class="first-level active"><a href="#midi-implementation">Midi Implementation</a></li>
+<li class="first-level active"><a href="#midi-implementation">MIDI Implementation</a></li>
 <li class="second-level"><a href="#pc-messages">PC Messages</a></li>
 <li class="second-level"><a href="#cc-messages">CC Messages</a></li>
 </ul>
 </div></div>
 <div class="col-md-9" role="main">
-<h1 id="midi-implementation">Midi Implementation</h1>
-<p>Midi implementation chart for the MC6.</p>
+<h1 id="midi-implementation">MIDI Implementation</h1>
+<p>MIDI implementation chart for the MC6 MKII.</p>
+<p>The MC6 MKII can respond to CC and PC messages from it's USB MIDI port and MIDI IN port to execute specific functions. You can send PC or CC messages via an external MIDI controller or software to control the MC6 MKII functions specified below.</p>
 <hr/>
 <h2 id="pc-messages">PC Messages</h2>
 <p>PC messages will change the banks on the MC6 MKII, where a PC#0 message will engage Bank 1, and PC#1 message will engage Bank 2, and so on.</p>
 <hr/>
 <h2 id="cc-messages">CC Messages</h2>
-<p>The MC6 MKII can be controlled by external midi controllers as well. Send the following messages via another Midi Controller to control the MC6.</p>
 <table>
 <thead>
 <tr>
@@ -173,6 +173,11 @@
 <td>Set Toggle (Individual)</td>
 <td>3</td>
 <td>0 - 11 (0 = Preset A)</td>
+</tr>
+<tr>
+<td>Page Toggle</td>
+<td>4</td>
+<td>any</td>
 </tr>
 <tr>
 <td>Engage Preset</td>
