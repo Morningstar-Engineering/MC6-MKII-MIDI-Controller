@@ -11,7 +11,7 @@ https://morningstar-engineering.github.io/MC6-MKII-Midi-Controller/site/
 #### PDF Manual
 
 PDF version is available in the pdf_manual folder on our Github page:
-https://github.com/Morningstar-Engineering/MC6-MKII-Midi-Controller
+https://github.com/Morningstar-Engineering/MC6-MKII-Midi-Controller/tree/master/pdf_manual
 
 ---
 
