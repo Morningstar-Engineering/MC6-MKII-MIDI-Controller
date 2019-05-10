@@ -122,21 +122,30 @@
 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
 <ul class="nav bs-sidenav">
 <li class="first-level active"><a href="#updating-your-firmware">Updating your firmware</a></li>
+<li class="second-level"><a href="#what-to-download">What to download</a></li>
+<li class="second-level"><a href="#upload-instructions">Upload instructions</a></li>
+<li class="second-level"><a href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </div></div>
 <div class="col-md-9" role="main">
 <h1 id="updating-your-firmware">Updating your firmware</h1>
-<p>Updatming your MC6 MKII firmware</p>
-<hr/>
 <p>We are constantly updating the firmware to include new features and bug fixes. </p>
-<p>The firmwares are available on our download page in our website. When a new firmware is released, we will send out an email to update users.</p>
 <hr/>
-<p>To update the firmware, you will need to use the Firmware Uploader software available in our Downloads page.</p>
-<p>You will also need to download the new firmware. In our Downloads page, click on MC6 MKII Firmware. You will be redirected to our Github page, which is our repository where we store all our releases. Click into the firmware version you want to download. Under the Assets label, you can see the firmware ending with a .hex extension. Click on it to download.</p>
+<h2 id="what-to-download">What to download</h2>
+<p>You'll need to use the Firmware Uploader software to upload the firmware to your device.</p>
+<p>Download the latest Firmware Uploader software <a href="https://github.com/Morningstar-Engineering/Firmware-Uploader/releases">here</a>.</p>
+<p>Download the latest firmware <a href="https://github.com/Morningstar-Engineering/MC6-MKII-Midi-Controller/releases">here</a></p>
+<h2 id="upload-instructions">Upload instructions</h2>
+<p>Open the Firmware Uploader
+<img alt="Firmware Uploader" src="../img/firmware_uploader.png"/></p>
+<p>If your device is connected, it will appear in the Firmware Uploader software.</p>
+<p>Click on Upload and select the firmware .hex file.</p>
+<p>The firmware should then begin uploading and should take only a couple of seconds. Once it is completed, your device will restart with the new firmware.</p>
 <hr/>
-<p>Once the firmware and Firmware Uploader is downloaded, run the Firmware Uploader software and connect your MC6 MKII to your computer. Your device should appear in the Firmware Uploader. </p>
-<p>Click on Upload. A pop-up box will appear. Select the firmware file that you downloaded and click Open. </p>
-<p>The firmware should then begin uploading and should take only a couple of seconds. Once it is completed, your MC6 MKII will restart with the new firmware.</p></div>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>In the rare event where your device upload is not successful, the device might appear to be bricked with blocks showing across the LCD screen. Do not worry. Just remove the back cover for your device. While the device is connected to your computer via USB, and with the Firmware Uploader open, press the reset button location on the PCB.</p>
+<p>Once pressed, the Firmware Uploader should detect the device. Thereafter, repeat the above upload procedure.</p>
+<p><img alt="Reset Button" src="../img/mc6-reset-button.png"/></p></div>
 </div>
 <footer class="col-md-12 text-center">
 <hr/>
