@@ -23,3 +23,8 @@ If you have a Double Tap action programmed into your preset, there will be a del
 
 ### How do I lock my banks so that Switch A+B or B+C will not bank down or bank up?
 Set your Switch Sensitivity to the maximum. This reduces the delay when a switch is pressed, and hence makes engaging dual switch functions harder.
+
+### How do I display PC Scroll numbers in the Preset Name?
+It is possible to display the PC Scroll number in the Preset name by using a placeholder %E0 to %E7. Since there are 8 slots in the PC Scroll function, %E0 will display the number in the first slot, while %E7 will display the number in the 8th slot. %E1 will display the number in the second slot.
+
+If I have a preset with a PC Scroll Up message on Slot 1 (incremental set to Yes), and my preset name is set to "Prst%E0", and assuming that the preset number in slot 1 is at 6, on the main preset page, the preset name will appear as "Prst6  ".
