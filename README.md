@@ -2,18 +2,11 @@
 Firmware for the MC6 MKII Midi Controller
 
 #### Latest stable release: v3.3.1
-#### Latest beta release: -
+#### Latest beta release: v3.4.0
 
 #### User Manual
+https://morningstarengineering.atlassian.net/wiki/spaces/MC6MKII/pages/458905/MC6+MKII+Manual
 
-https://morningstar-engineering.github.io/MC6-MKII-Midi-Controller/site/
-
-#### PDF Manual
-
-PDF version is available in the pdf_manual folder on our Github page:
-https://github.com/Morningstar-Engineering/MC6-MKII-Midi-Controller/tree/master/pdf_manual
-
----
 
 #### Naming convention for firmware numbers
 
