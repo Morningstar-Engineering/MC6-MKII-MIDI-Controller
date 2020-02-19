@@ -12,7 +12,7 @@ https://morningstarengineering.atlassian.net/wiki/spaces/MC6MKII/pages/458905/MC
 https://www.youtube.com/watch?v=wtvX8Y9LzXo
 
 
-#### Naming convention for firmware numbers
+## Naming convention for firmware numbers
 
 ##### Example: v3.3.1
 - 3: Current architecture. Requires a total reset if switching to a different version
