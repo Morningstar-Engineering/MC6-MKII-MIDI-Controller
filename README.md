@@ -5,9 +5,11 @@ Firmware for the MC6 MKII Midi Controller
 Please read the version change log before updating.
 https://morningstarengineering.atlassian.net/wiki/spaces/MC6MKII/pages/819212/Change+Log
 
-
 #### User Manual
 https://morningstarengineering.atlassian.net/wiki/spaces/MC6MKII/pages/458905/MC6+MKII+Manual
+
+## How to update your firmware
+https://www.youtube.com/watch?v=wtvX8Y9LzXo
 
 
 #### Naming convention for firmware numbers
